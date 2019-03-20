@@ -1,0 +1,60 @@
+table#index-table tr td,
+table#index-table th {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+input {
+  margin: 5px 1em;
+}
+
+input[type=text] {
+  width: 20em;
+}
+
+#error-messages {
+  margin: 2em;
+  width: 50%;
+  background-color: #a00;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#flash-messages {
+  position: absolute;
+  top: 5em;
+  right: 5em;
+  z-index: 10;
+  -webkit-animation: flash-message 6s forwards;
+          animation: flash-message 6s forwards;
+}
+
+@-webkit-keyframes flash-message {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes flash-message {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.ck.ck-reset {
+  width: 70% !important;
+}
+
