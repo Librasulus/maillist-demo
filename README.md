@@ -4,8 +4,9 @@ A quick project based on the idea of mailing lists. Mailing is not yet implement
 
 Technologies used:
 - Laravel 5.8
-- 
+- jeroennoten/Laravel-AdminLTE 1.25.1
 - Bootstrap 
+- CKeditor
 
 ## To set up example
 1) Clone/fetch repository
