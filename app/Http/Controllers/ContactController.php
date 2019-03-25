@@ -15,7 +15,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contacts = Contact::all()->sortBy('name');
+        $contacts = Contact::sortable()->paginate(10);
         return view('contacts.index', compact('contacts'));
     }
 

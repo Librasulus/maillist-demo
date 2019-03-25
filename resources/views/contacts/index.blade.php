@@ -15,12 +15,16 @@
     @include('layouts.flashes')
 
     <a class="btn btn-primary" href="contacts/create">New Contact</a>
+    
+    
+    
     <table class="table table-hover table-responsive" id="index-table">
       <thead>
-        <th>Name</th>
-        <th>Email</th>
+        <th>@sortablelink('name', 'Name')</th>
+        <th>@sortablelink('email', 'Email')</th>
         <th>Lists</th>
       </thead>
+      
       @foreach($contacts as $contact)
       <tr>
         <td>{{ $contact->name }}</td>
@@ -41,5 +45,7 @@
         </td>
       </tr>
       @endforeach
+      
     </table>
+    {{ $contacts->links() }}
 @stop
